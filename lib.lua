@@ -117,6 +117,7 @@ function lib.Window(title, gameName, settings)
 	TabsScrollingFrame.Size = UDim2.new(1, 0, 1, -35)
 	TabsScrollingFrame.CanvasSize = UDim2.new(0, 0, 0, 0)
 	TabsScrollingFrame.ScrollBarThickness = 0
+	TabsScrollingFrame.AutomaticCanvasSize = Enum.AutomaticSize.Y
 
 	UIListLayout.Parent = TabsScrollingFrame
 	UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
@@ -328,6 +329,7 @@ function lib.Window(title, gameName, settings)
 		ContentScrollingFrame.Size = UDim2.new(1, -16, 1, -20)
 		ContentScrollingFrame.CanvasSize = UDim2.new(0, 0, 0, 0)
 		ContentScrollingFrame.ScrollBarThickness = 0
+		ContentScrollingFrame.AutomaticCanvasSize = Enum.AutomaticSize.Y
 
 		UIListLayout.Parent = ContentScrollingFrame
 		UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
